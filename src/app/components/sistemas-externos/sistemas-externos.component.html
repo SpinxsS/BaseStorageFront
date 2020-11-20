@@ -1,0 +1,28 @@
+<div class="formularioRegistro">
+
+    <form [formGroup]= "sistemaExternoForm" (ngSubmit)="guardar()">
+        <div class="form-group">
+            <label>Nit</label>
+            <input type="text" formControlName="nit" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Nombre</label>
+            <input type="text" formControlName="nombre" class="form-control">
+        </div>
+        <div class="form-group">
+          <label>telefono</label>
+          <input type="text" formControlName="telefono" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Direccion</label>
+            <input type="text" formControlName="direccion" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Tipo de sistema</label>
+            <input type="text" formControlName="tipoSistema" class="form-control">
+        </div>
+        
+        <button type="submit" class="btn btn-primary" [disabled]="sistemaExternoForm.invalid">Guardar</button>
+        
+    </form>
+</div>

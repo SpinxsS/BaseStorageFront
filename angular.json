@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "inpelProject"
+    }
+  },
+  "defaultProject": "inpelProject",
+  "cli": {
+    "analytics": "b88e6354-456d-4660-878a-fa7cb057e15a"
+  }
 }
